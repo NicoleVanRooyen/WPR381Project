@@ -7,7 +7,6 @@ const url = "https://api.openweathermap.org/data/2.5/weather?zip=" + zip + "," +
 fetch(url)
 .then(results => results.json())
 .then(jsondata => {
-
     //Output
     var currentTemp = jsondata['main']['temp'];
     var temp_min = jsondata['main']['temp_min'];
