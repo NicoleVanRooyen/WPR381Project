@@ -16,16 +16,15 @@ class App extends Component {
     this.callAPI();
   }
 
+  onSubmit = () => {
+    this.props.history.push('/Output')
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-        <a
-            //className="App-link"
-            //href="https://reactjs.org"
-            //target="_blank"
-            //rel="noopener noreferrer"
-          >
+        <a>
             Weather Forecast
             <p>Enter a zipcode below to get the current weather for that area</p>
           </a>
@@ -34,7 +33,7 @@ class App extends Component {
           <p className = "Enter-details">
             <form>
               <input type="text" name="postalcode" placeholder="Enter Postal Code"></input>
-              <input type="submit" value="ENTER" ></input>
+              <input type="submit" onClick={this.onSubmit} value="ENTER" ></input>
             </form>
           </p>
         </header>
