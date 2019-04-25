@@ -34,7 +34,7 @@ class App extends Component {
           <p className = "Enter-details">
             <form>
               <input type="text" name="postalcode" placeholder="Enter Postal Code"></input>
-              <input type="submit" value="ENTER" onClick="sendData()"></input>
+              <input type="submit" value="ENTER" ></input>
             </form>
           </p>
         </header>
